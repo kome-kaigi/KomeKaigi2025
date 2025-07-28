@@ -159,16 +159,21 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(250, 190, 0, 0.3);
         }
+        
+        /* スムーススクロール */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
-<body class="text-[#2A2E35] leading-relaxed tech-bg">
+<body class="text-[#2A2E35] leading-relaxed tech-bg pt-20">
 <!-- Header -->
-<header class="bg-white/95 backdrop-blur py-8 shadow-md">
+<header class="bg-white/95 backdrop-blur py-4 shadow-md fixed top-0 left-0 right-0 z-50">
     <div class="container mx-auto flex items-center justify-between px-4">
-        <div class="flex items-center">
+        <a href="#hero" class="flex items-center">
             <img src="assets/images/komekaigi_symbol.svg" alt="KomeKaigi Logo" class="h-10 mr-3"/>
             <h1 class="text-2xl font-bold text-[#fabe00]">KomeKaigi 2025</h1>
-        </div>
+        </a>
         <nav>
             <ul class="flex space-x-6">
                 <li><a href="#overview" class="hover:text-[#fabe00] transition-colors">概要</a></li>
